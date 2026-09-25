@@ -1,0 +1,162 @@
+/* Reset stili base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfbf7;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Intestazione (Hero Section) */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://unsplash.com') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ff4a4a;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.hero .tagline {
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Sezione Storia/Descrizione */
+.about {
+    text-align: center;
+}
+
+.about h2, .menu h2, .contacts h2 {
+    font-size: 2.2rem;
+    color: #d32f2f;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.about h2::after, .menu h2::after, .contacts h2::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background-color: #ffa000;
+    bottom: 0;
+    left: 20%;
+}
+
+.about p {
+    font-size: 1.1rem;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Sezione Menu */
+.menu {
+    background-color: #f5f0e6;
+    border-radius: 8px;
+}
+
+.menu h2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.menu-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-left: 4px solid #d32f2f;
+}
+
+.menu-item h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.menu-item .ingredients {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #d32f2f;
+    font-size: 1.1rem;
+}
+
+/* Sezione Contatti */
+.contacts {
+    text-align: center;
+}
+
+.contacts-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.info-block {
+    flex: 1;
+    min-width: 250px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.info-block h3 {
+    color: #ffa000;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.info-block p {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
